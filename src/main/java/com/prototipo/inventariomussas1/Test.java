@@ -8,7 +8,7 @@ public class Test {
         Connection conexion = conexionBD.conectar();
 
         if (conexion != null) {
-            System.out.println("Conexion exitosa a BD");
+            System.out.println("Conexion Exitosa a BD");
         } else {
             System.out.println("Error al conectar a BD");
         }
