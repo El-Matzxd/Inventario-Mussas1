@@ -1,5 +1,4 @@
 
-
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -8,8 +7,8 @@
     <title>Registrar Producto</title>
     <style>
         body {
-            background-color: #ffc0cb; /* Fondo rosa suave */
-            font-family: Arial, sans-serif; /* Fuente consistente */
+            background-color: #ffc0cb;
+            font-family: Arial, sans-serif;
             text-align: center;
         }
 
