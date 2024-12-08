@@ -23,19 +23,20 @@ public class ConsultarProductosServlet extends HttpServlet {
             throws ServletException, IOException {
         List<Producto> productos = new ArrayList<>();
         try (Connection conn = ConexionBD.getConnection()) {
-            String query = "SELECT nombre, cantidad, marca FROM productos";
+            String query = "SELECT id, nombre, cantidad, marca FROM productos";
             PreparedStatement stmt = conn.prepareStatement(query);
             ResultSet rs = stmt.executeQuery();
 
             while (rs.next()) {
                 Producto producto = new Producto();
+                producto.setId(rs.getInt("id"));
                 producto.setNombre(rs.getString("nombre"));
                 producto.setCantidad(rs.getInt("cantidad"));
                 producto.setMarca(rs.getString("marca"));
                 productos.add(producto);
             }
 
-            // Enviar productos JSP
+            // Enviar productos al JSP
             request.setAttribute("productos", productos);
             request.getRequestDispatcher("consultar_productos.jsp").forward(request, response);
         } catch (SQLException e) {

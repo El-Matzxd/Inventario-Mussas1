@@ -1,4 +1,5 @@
 
+
 package mus;
 
 import java.io.IOException;
@@ -13,8 +14,8 @@ import javax.servlet.http.HttpServletResponse;
 public class LoginServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
-    private static final String USERNAME = "admin";
-    private static final String PASSWORD = "12345";
+    private static final String USERNAME = "Cami18";
+    private static final String PASSWORD = "011003";
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -29,4 +30,3 @@ public class LoginServlet extends HttpServlet {
         }
     }
 }
-

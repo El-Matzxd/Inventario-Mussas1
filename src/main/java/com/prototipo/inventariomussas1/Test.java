@@ -1,3 +1,3 @@
 
 
-Ya no esta en uso
+Fuera de uso
