@@ -1,11 +1,12 @@
 
+
 <!DOCTYPE html>
 <html>
 <head>
     <title>Login - Inventario Mussas</title>
     <style>
         body {
-            background-color: #ffc0cb; /* Rosa suave */
+            background-color: #ffc0cb;
             font-family: Arial, sans-serif;
             text-align: center;
             margin-top: 50px;
@@ -15,6 +16,8 @@
         }
         form {
             display: inline-block;
+
+
             padding: 20px;
             border: 2px solid gold;
             border-radius: 10px;

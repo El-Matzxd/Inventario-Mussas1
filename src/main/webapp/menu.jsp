@@ -1,37 +1,42 @@
 
+
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Menu - Inventario Mussas</title>
+    <meta charset="UTF-8">
+    <title>Menu Principal</title>
     <style>
         body {
-            background-color: #ffc0cb; /* Rosa suave */
+            background-color: #ffc0cb;
             font-family: Arial, sans-serif;
             text-align: center;
-            margin-top: 50px;
         }
+
         h1 {
             color: gold;
         }
+
         a {
-            display: block;
-            margin: 20px auto;
+            display: inline-block;
+            margin: 10px;
             padding: 10px 20px;
             background-color: gold;
             color: white;
             text-decoration: none;
             border-radius: 5px;
-            width: 200px;
         }
+
         a:hover {
-            background-color: darkgoldenrod;
+            background-color: #ffd700;
         }
     </style>
 </head>
 <body>
 <h1>Menu Principal</h1>
-<a href="RegistrarProducto.jsp">Registrar Producto</a>
-<a href="ConsultarProducto.jsp">Consultar Producto</a>
-<a href="EliminarProducto.jsp">Eliminar Producto</a>
+<a href="registrar_producto.jsp">Registrar Producto</a>
+<a href="consultar_producto.jsp">Consultar Productos</a>
+<a href="eliminar_producto.jsp">Eliminar Producto</a>
 </body>
 </html>
+
