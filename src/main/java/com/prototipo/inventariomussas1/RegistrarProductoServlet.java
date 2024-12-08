@@ -1,4 +1,5 @@
 
+
 package mus;
 
 import java.io.IOException;
@@ -23,7 +24,7 @@ public class RegistrarProductoServlet extends HttpServlet {
         String marca = request.getParameter("marca");
 
         try {
-            int cantidad = Integer.parseInt(cantidadStr); // Convertir cantidad a entero
+            int cantidad = Integer.parseInt(cantidadStr); // Convertir a entero
 
             Connection conn = ConexionBD.getConnection();
             String query = "INSERT INTO productos (nombre, cantidad, marca) VALUES (?, ?, ?)";
@@ -47,3 +48,4 @@ public class RegistrarProductoServlet extends HttpServlet {
         }
     }
 }
+
