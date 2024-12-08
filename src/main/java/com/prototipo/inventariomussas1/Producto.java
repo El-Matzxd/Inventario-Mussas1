@@ -2,9 +2,18 @@
 package mus;
 
 public class Producto {
+    private int id;
     private String nombre;
     private int cantidad;
     private String marca;
+
+    public int getId() {  // Getter y Setter para lo0s ID
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getNombre() {
         return nombre;

@@ -1,5 +1,4 @@
 
-
 <%@ page import="java.util.List" %>
 <%@ page import="mus.Producto" %>
 <!DOCTYPE html>
@@ -15,7 +14,7 @@
             text-align: center;
         }
         table {
-            width: 50%;
+            width: 70%;
             margin: auto;
             border-collapse: collapse;
         }
@@ -34,21 +33,18 @@
 <h1>Productos en el Inventario</h1>
 <table>
     <tr>
+        <th>ID</th>
         <th>Nombre</th>
         <th>Cantidad</th>
         <th>Marca</th>
     </tr>
     <%
-        Object productosAttr = request.getAttribute("productos");
-        List<Producto> productos = null;
-        if (productosAttr instanceof List<?>) {
-            productos = (List<Producto>) productosAttr;
-        }
-
+        List<mus.Producto> productos = (List<mus.Producto>) request.getAttribute("productos");
         if (productos != null && !productos.isEmpty()) {
             for (Producto producto : productos) {
     %>
     <tr>
+        <td><%= producto.getId() %></td>
         <td><%= producto.getNombre() %></td>
         <td><%= producto.getCantidad() %></td>
         <td><%= producto.getMarca() %></td>
@@ -58,7 +54,7 @@
     } else {
     %>
     <tr>
-        <td colspan="3">El Inventario esta Vacio :(</td>
+        <td colspan="4">El Inventario esta Vacio :(</td>
     </tr>
     <%
         }

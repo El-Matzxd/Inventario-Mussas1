@@ -44,7 +44,7 @@
     </style>
 </head>
 <body>
-<h1>Login Page</h1>
+<h1>Mussas</h1>
 <form method="post" action="LoginServlet">
     <input type="text" name="username" placeholder="Nombre de Usuario">
     <input type="password" name="password" placeholder="Contraseña">

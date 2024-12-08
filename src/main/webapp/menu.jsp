@@ -1,6 +1,4 @@
 
-
-
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -34,7 +32,7 @@
     </style>
 </head>
 <body>
-<h1>Menu Principal</h1>
+<h1>Menu</h1>
 <a href="registrar_producto.jsp">Registrar Producto</a>
 <a href="ConsultarProductosServlet">Consultar Productos</a>
 <a href="eliminar_producto.jsp">Eliminar Producto</a>
