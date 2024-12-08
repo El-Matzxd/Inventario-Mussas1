@@ -1,4 +1,4 @@
-package com.prototipo.inventariomussas1;
+package mus;
 
 import java.sql.Connection;
 

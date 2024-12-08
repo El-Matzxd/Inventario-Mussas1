@@ -1,4 +1,4 @@
-package com.prototipo.inventariomussas1;
+package mus;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -13,7 +13,7 @@ public class ConexionBD {
         try {
             return DriverManager.getConnection(URL, USER, PASSWORD);
         } catch (SQLException e) {
-            System.out.println("Error al conectar a la BD: " + e.getMessage());
+            System.out.println("Error al conectar a la bd: " + e.getMessage());
             return null;
         }
     }
